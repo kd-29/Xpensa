@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodem server.js"
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,7 @@
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "nodeman": "^1.1.2"
+    "nodeman": "^1.1.2",
+    "nodemon": "^3.1.10"
   }
 }
