@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const bcrypt = require("bcryptjs");
 
-const UserSchema = new moongoose.Schema(
+const UserSchema = new mongoose.Schema(
                 {
                                 fullname:   {type: String , required: true },
                                 email:  {type: String , required: true, unique: true },
@@ -26,4 +26,6 @@ UserSchema.methods.comparePassword = async function (candidatePassword) {
 };
 
 module.exports = mongoose.model("User", UserSchema);
+
+
 
